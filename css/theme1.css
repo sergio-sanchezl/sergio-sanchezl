@@ -1,0 +1,52 @@
+.fullname {}
+
+.surname {
+    font-weight: bold;
+}
+
+.mi-foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: lightblue;
+}
+
+.contenedor-foto {
+    text-align: center;
+}
+
+.intro {
+    margin-bottom: 64px;
+}
+
+.container {
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+body {
+    background-image: url(../img/whirlpool.png)
+}
+
+.seccion {
+    margin-bottom: 64px;
+    background-color: rgba(0, 0, 0, 0.04)
+}
+
+.contenido-seccion {
+    border-left: 3px solid rgba(255, 255, 255, 0.50);
+    border-right: 3px solid rgba(255, 255, 255, 0.50);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.titulo-seccion {
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Work Sans'
+}

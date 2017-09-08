@@ -1,76 +1,29 @@
 <html>
-    <head>
+
+<head>
     <title>Hello!</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans" rel="stylesheet">
-    <style>
-        .fullname {}
-        
-        .surname {
-            font-weight: bold;
-        }
-        
-        .mi-foto {
-            width: 200px;
-            height: 200px;
-            border-radius: 100%;
-            background-color: lightblue;
-        }
-        
-        .contenedor-foto {
-            text-align: center;
-        }
-        
-        .intro {
-            margin-bottom: 64px;
-        }
-        
-        .container {
-            padding: 16px;
-            background-color: rgba(255, 255, 255, 0.5);
-        }
-        
-        body {
-            background-image: url(./img/whirlpool.png)
-        }
-        
-        .seccion {
-            margin-bottom: 64px;
-            background-color: rgba(0,0,0,0.04)
-        }
-        
-        .contenido-seccion {
-            border-left: 3px solid rgba(255,255,255,0.50);
-            border-right: 3px solid rgba(255,255,255,0.50);
-            background-color: rgba(255,255,255,0.3);
-        }
-        
-        .titulo-seccion {
-            text-align: center;
-        }
-        
-        h1, h2, h3, h4, h5 {
-            font-family: 'Work Sans'
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans" rel="stylesheet">
+    <link href="./css/theme.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <div class="row intro">
-            <div class="row jumbotron">
+            <div class="row jumbotron mi-header">
                 <div class="col-sm-3">
-                    <div class="contenedor-foto">
+                    <div class="contenedor-foto col-sm-12">
                         <div class="mi-foto"></div>
                     </div>
                 </div>
                 <div class="col-sm-9">
-                    <h1 class="fullname">Sergio<br><span class="surname">Sánchez López</span></h1>
-                    <p class="lead">Estudiante de Grado en Ingeniería Informática<br>Programador Game-dev y Web-dev</p>
+                    <h1 class="fullname">Sergio<br><span class="surname">Sánchez<span class="space"> </span>López</span>
+                    </h1>
+                    <p class="lead">Estudiante de 4º curso de Grado en Ingeniería Informática<br>Desarrollador full-stack especializado en <span class="gamedev">gamedev</span> y <span class="webdev">&lt;webdev/&gt;</span></p>
                 </div>
 
             </div>
@@ -80,20 +33,33 @@
                 </div>
                 <div class="col-sm-9 contenido-seccion">
                     <div class="col-sm-12">
-                    <div class="col-sm-6">
-                        <h4><i class="fa fa-globe fa-fw"></i><b>&nbsp; Localización</b></h4>Meco, Madrid
-                    </div>
-                    <div class="col-sm-6">
-                        <h4><i class="fa fa-phone fa-fw"></i><b>&nbsp;Teléfono móvil</b></h4>690778058
-                    </div>
-                    <div class="col-sm-6">
-                        <h4><i class="fa fa-external-link-square fa-fw"></i><b>&nbsp;Web personal</b></h4><a href="http://sergio-sanchezl.github.io">sergio-sanchezl.github.io</a>
-                    </div>
-                    <div class="col-sm-6">
-                        <h4><i class="fa fa-envelope fa-fw"></i><b>&nbsp;Correo personal</b></h4><a href="mailto:sergiosanchezlopez.0@gmail.com">sergiosanchezlopez.0@gmail.com</a>
-                    </div>
+                        <div class="col-sm-6">
+                            <h4><i class="fa fa-globe fa-fw"></i>&nbsp; Localización</h4>Meco, Madrid
+                        </div>
+                        <div class="col-sm-6">
+                            <h4><i class="fa fa-phone fa-fw"></i>&nbsp;Teléfono móvil</h4>690778058
+                        </div>
+                        <div class="col-sm-6">
+                            <h4><i class="fa fa-external-link-square fa-fw"></i>&nbsp;Web personal</h4><a href="http://sergio-sanchezl.github.io">sergio-sanchezl.github.io</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <h4><i class="fa fa-envelope fa-fw"></i>&nbsp;Correo personal</h4><a href="mailto:sergiosanchezlopez.0@gmail.com">sergiosanchezlopez.0@gmail.com</a>
+                        </div>
                     </div><br>&nbsp;
 
+                </div>
+            </div>
+            <div class="col-sm-12 seccion">
+                <div class="col-sm-3 titulo-seccion">
+                    <h2><i class="fa fa-graduation-cap fa-fw"></i><br><b>Estudios</b></h2>
+                </div>
+                <div class="col-sm-9 contenido-seccion">
+                    <div class="col-sm-12">
+                        <h3>Grado en Ingeniería Informática - Universidad de Alcalá (UAH)</h3>
+                        <h4>2014 - <i>2018 (Previsto)</i></h4>
+                        <h4>Curso actual: 4º</h4>
+                        <h5>Graduación prevista en 2018</h5>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-12 seccion">
@@ -102,9 +68,9 @@
                 </div>
                 <div class="col-sm-9 contenido-seccion">
                     <div class="col-sm-12">
-                        <h3><b>Beca de Investigación</b></h3>
+                        <h3>Beca de Investigación</h3>
                         <ul>
-                            <li>Beca de Investigación en el Departamento de Ciencias de la Computación de la Universidad de Alcalá (UAH)</li>
+                            <li>Beca de Investigación en el Departamento de Ciencias de la Computación de la Universidad de Alcalá.</li>
                             <li>Duración: del 15 de Julio de 2017 hasta la actualidad.</li>
                             <li>Tareas desempeñadas:
                                 <ul>
@@ -114,9 +80,9 @@
                         </ul>
                     </div>
                     <div class="col-sm-12">
-                        <h3><b>Beca de Introducción a la Investigación</b></h3>
+                        <h3>Beca de Introducción a la Investigación</h3>
                         <ul>
-                            <li>Beca de Introducción a la Investigación en el Departamento de Ciencias de la Computación de la Universidad de Alcalá (UAH): competitiva según nota media, 15 plazas por convocatoria.</li>
+                            <li>Beca de Introducción a la Investigación en el Departamento de Ciencias de la Computación de la Universidad de Alcalá: competitiva según nota media, 15 plazas por convocatoria.</li>
                             <li>Duración: del 15 de Enero de 2017 al 14 de Julio de 2017 (6 meses)</li>
                             <li>Tareas desempeñadas:
                                 <ul>
@@ -129,9 +95,9 @@
                         </ul>
                     </div>
                     <div class="col-sm-12">
-                        <h3><b>Beca de Investigación</b></h3>
+                        <h3>Beca de Investigación</h3>
                         <ul>
-                            <li>Beca de Investigación en el Departamento de Ciencias de la Computación de la Universidad de Alcalá (UAH)</li>
+                            <li>Beca de Investigación en el Departamento de Ciencias de la Computación de la Universidad de Alcalá.</li>
                             <li>Duración: del 24 de Mayo de 2016 al 15 de Enero de 2017 (~7 meses)</li>
                             <li>Tareas desempeñadas:
                                 <ul>
@@ -144,19 +110,7 @@
                     <div class="col-sm-12"></div>
                 </div>
             </div>
-            <div class="col-sm-12 seccion">
-                <div class="col-sm-3 titulo-seccion">
-                    <h2><i class="fa fa-graduation-cap fa-fw"></i><br><b>Estudios</b></h2>
-                </div>
-                <div class="col-sm-9 contenido-seccion">
-                    <div class="col-sm-12">
-                        <h3><b>Grado en Ingeniería Informática</b> - Universidad de Alcalá (UAH)</h3>
-                        <h4>2014 - <i>2018 (Previsto)</i></h4>
-                        <h4>Curso actual: 4º</h4>
-                        <h5>Graduación prevista en 2018</h5>
-                    </div>
-                </div>
-            </div>
+
             <div class="col-sm-12 seccion">
                 <div class="col-sm-3 titulo-seccion">
                     <h2><i class="fa fa-paper-plane fa-fw"></i><br><b>Cursos</b></h2>
@@ -207,16 +161,16 @@
                                 Dominio de la biblioteca jQuery y el framework Bootstrap.
                             </li>
                             <li>
-                                Iniciado en lenguajes como Sass (CSS) y TypeScript (JS)
+                                Iniciado en lenguajes como Sass (CSS) y TypeScript (JS).
                             </li>
                         </ul>
                     </div>
                     <div class="aptitud col-sm-6">
                         <h3>Otros</h3>
                         <ul>
-                            <li>Lenguajes de programación: C, C++, Scala, SQL. </li>
+                            <li>Lenguajes de programación: C, C++, Scala y SQL. </li>
                             <li>Uso de sistemas de control de versiones Subversion y Git.</li>
-                            <li>Experiencia con servidores basados Apache Tomcat: despliegue de aplicaciones y configuración del servidor.</li>
+                            <li>Experiencia con servidores basados en tecnologías Apache Tomcat: despliegue de aplicaciones y configuración del servidor.</li>
                             <li>Gestión de bases de datos PostgreSQL y MySQL.</li>
                         </ul>
                     </div>
@@ -246,7 +200,7 @@
                                 <li>Microsoft Project a nivel básico</li>
                             </ul>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -255,18 +209,26 @@
                     <h2><i class="fa fa-flag fa-fw"></i><br><b>Idiomas</b></h2>
                 </div>
                 <div class="col-sm-9 contenido-seccion">
-                    <div class="col-sm-6">
-                        <h3>Inglés</h3>
-                        <h4>Nivel: C1 - Dominio operativo</h4>
-                    </div>
-                    <div class="col-sm-6">
-                        <h3>Francés</h3>
-                        <h4>Nivel: A2 - Plataforma</h4>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6">
+                            <h3>Inglés</h3>
+                            <h4>Nivel: C1 - Dominio operativo</h4>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>Francés</h3>
+                            <h4>Nivel: A2 - Plataforma</h4><br>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!--div class="col-sm-12 seccion mi-footer">
+                <div class="col-sm-12">
+                    <a href="#" class=""><i class="fa fa-github fa-fw fa-3x"></i></a>
+                </div>
+            </div-->
         </div>
-    </div>
 
+    </div>
 </body>
+
 </html>

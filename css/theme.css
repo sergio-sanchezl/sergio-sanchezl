@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Carter+One|Press+Start+2P|Permanent+Marker');
+
+.mi-header {
+    background-image: url(../img/footer_lodyas.png);
+    color: white;
+}
+
+.mi-footer {
+    color: white;
+    margin-bottom: -62px !important;
+    padding-bottom: 8px
+}
+
+.container {
+    padding-bottom: 0px !important;
+}
+
+:root {
+    --orange: #EF6C00;
+    --yellow: #F9A825;
+    --light-green: #558B2F;
+    --green: #2E7D32;
+    --teal: #00695C;
+    --light-blue: #0277BD;
+    --blue: #1976D2;
+    --indigo: #303F9F;
+    --purple: #6A1B9A;
+    --red: #C62828;
+    --dark-grey: #333333;
+    --u1: #38414B;
+    --u2: #19D1D1;
+    --u3: #FF0066;
+}
+
+.space {
+    font-size: 40px
+}
+.mi-header .fullname {
+    /*font-family: 'Press Start 2P';*/
+    font-family: "Permanent Marker";
+    text-align: left;
+    font-size: 112px !important;
+    line-height: 72px;
+}
+
+.mi-header .surname {
+    font-family: "Permanent Marker";
+    color: var(--u2);
+    font-size: 86px !important;
+    line-height: 86px;
+}
+
+
+.mi-header .surname::before {
+    content: "";
+    margin-left: 48px
+}
+
+.mi-footer .fullname {
+    font-family: "Permanent Marker";
+}
+
+.mi-footer .surname {
+    color: var(--u2);
+}
+
+.gamedev {
+    font-family: monospace
+}
+
+.webdev {
+    font-family: monospace
+}
+
+
+.mi-foto {
+    width: 225px;
+    height: 225px;
+    background: url(http://www.azquotes.com/public/pictures/authors/e0/85/e0856c61b830d5f2f35feba81f71eb46/54865088cab03_angela_lansbury.jpg) no-repeat center;
+    border-radius: 100%;
+    background-color: lightblue;
+}
+
+.contenedor-foto {
+    text-align: center;
+}
+
+.intro {
+    margin-bottom: 64px;
+}
+
+.container {
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.28)
+}
+
+body {
+    background-image: url(../img/small_steps.png)
+}
+a {
+    color: black;
+}
+.seccion {
+    margin-bottom: 64px;
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 0px;
+    /*box-shadow: 8px 8px rgba(0,0,0,0.25);*/
+}
+
+.seccion {
+    background-color: var(--dark-grey);
+    border-bottom: 4px solid var(--u2)
+}
+
+
+/*
+.seccion:nth-child(7n+2) {
+    background-color: var(--red)
+}
+
+.seccion:nth-child(7n+3) {
+    background-color: var(--orange)
+}
+
+.seccion:nth-child(7n+4) {
+    background-color: var(--yellow)
+}
+
+.seccion:nth-child(7n+5) {
+    background-color: var(--light-green)
+}
+
+.seccion:nth-child(7n+6) {
+    background-color: var(--light-blue);
+}
+
+.seccion:nth-child(7n+0)  {
+    background-color: var(--indigo)
+}
+
+.seccion:nth-child(7n+1)  {
+    background-color: var(--purple)
+}
+*/
+/* fffffffffffffff */
+/*
+.seccion:nth-child(7n+2) h3, .seccion:nth-child(7n+2) h4{
+    color: var(--red)
+}
+
+.seccion:nth-child(7n+3) h3 {
+    color: var(--orange)
+}
+
+.seccion:nth-child(7n+4) h3 {
+    color: var(--yellow)
+}
+
+.seccion:nth-child(7n+5) h3 {
+    color: var(--light-green)
+}
+
+.seccion:nth-child(7n+6) h3 {
+    color: var(--light-blue);
+}
+
+.seccion:nth-child(7n+0) h3 {
+    color: var(--indigo)
+}
+
+.seccion:nth-child(7n+1) h3 {
+    color: var(--purple)
+}
+*/
+
+.seccion:nth-child(7n+4) {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%,#333333 75%), url(../img/Captura3.png);
+    background-position: left;
+}
+
+.seccion:nth-child(7n+6) {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%,#333333 65%), url(../img/Captura2.png);
+    background-position: 500px 0;
+}
+
+.seccion:nth-child(7n+5) {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%,#333333 85%), url(../img/Captura.png);
+    background-position: 700px 0;
+}
+
+.seccion h3, .seccion:nth-child(2) h4 {
+    color: var(--u3)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Work Sans';
+}
+
+.titulo-seccion {
+    color: #FFFFFF;
+    font-family: 'Press Start 2P';
+    /*text-shadow: 2px 2px rgb(0,0,0);*/
+}
+
+.contenido-seccion {
+    border-top: 3px solid rgba(255, 255, 255, 0.50);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.50);
+    background-color: rgb(255, 255, 255);
+}
+
+.titulo-seccion {
+    text-align: center;
+}
+
+
+
+.titulo {
+    color: var(--purple);
+}
+
+
