@@ -223,4 +223,29 @@ h5 {
     color: var(--purple);
 }
 
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
 
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+.navbar-nav > li {
+    font-family: "Permanent Marker";
+    font-size: 24px;
+}
