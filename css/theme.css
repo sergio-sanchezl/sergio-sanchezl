@@ -175,17 +175,17 @@ a {
 */
 
 .seccion:nth-child(7n+4) {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%,#333333 75%), url(../img/Captura3.png);
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%,#333333 75%), url(../img/foto3.png);
     background-position: left;
 }
 
 .seccion:nth-child(7n+6) {
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%,#333333 65%), url(../img/Captura2.png);
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%,#333333 65%), url(../img/foto2.png);
     background-position: 500px 0;
 }
 
 .seccion:nth-child(7n+5) {
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%,#333333 85%), url(../img/Captura.png);
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%,#333333 85%), url(../img/foto1.png);
     background-position: 700px 0;
 }
 
