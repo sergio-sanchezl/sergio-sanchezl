@@ -74,11 +74,12 @@
 
 
 .mi-foto {
-    width: 225px;
-    height: 225px;
-    background: url(http://www.azquotes.com/public/pictures/authors/e0/85/e0856c61b830d5f2f35feba81f71eb46/54865088cab03_angela_lansbury.jpg) no-repeat center;
+    width: 250px;
+    height: 250px;
+    background: url(../img/profilepicture.png);
+    background-size: 100%;
     border-radius: 100%;
-    background-color: lightblue;
+    background-color: white;
 }
 
 .contenedor-foto {
@@ -113,78 +114,26 @@ a {
     border-bottom: 4px solid var(--u2)
 }
 
-
-/*
-.seccion:nth-child(7n+2) {
-    background-color: var(--red)
-}
-
-.seccion:nth-child(7n+3) {
-    background-color: var(--orange)
-}
-
 .seccion:nth-child(7n+4) {
-    background-color: var(--yellow)
-}
-
-.seccion:nth-child(7n+5) {
-    background-color: var(--light-green)
-}
-
-.seccion:nth-child(7n+6) {
-    background-color: var(--light-blue);
-}
-
-.seccion:nth-child(7n+0)  {
-    background-color: var(--indigo)
-}
-
-.seccion:nth-child(7n+1)  {
-    background-color: var(--purple)
-}
-*/
-/* fffffffffffffff */
-/*
-.seccion:nth-child(7n+2) h3, .seccion:nth-child(7n+2) h4{
-    color: var(--red)
-}
-
-.seccion:nth-child(7n+3) h3 {
-    color: var(--orange)
-}
-
-.seccion:nth-child(7n+4) h3 {
-    color: var(--yellow)
-}
-
-.seccion:nth-child(7n+5) h3 {
-    color: var(--light-green)
-}
-
-.seccion:nth-child(7n+6) h3 {
-    color: var(--light-blue);
-}
-
-.seccion:nth-child(7n+0) h3 {
-    color: var(--indigo)
-}
-
-.seccion:nth-child(7n+1) h3 {
-    color: var(--purple)
-}
-*/
-
-.seccion:nth-child(7n+4) {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)),color-stop(75%, #333333)), url(../img/foto3.png);
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%,#333333 75%), url(../img/foto3.png);
+  background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%,#333333 75%), url(../img/foto3.png);
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%,#333333 75%), url(../img/foto3.png);
     background-position: left;
 }
 
 .seccion:nth-child(7n+6) {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)),color-stop(65%, #333333)), url(../img/foto2.png);
+    background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%,#333333 65%), url(../img/foto2.png);
+    background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%,#333333 65%), url(../img/foto2.png);
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%,#333333 65%), url(../img/foto2.png);
     background-position: 500px 0;
 }
 
 .seccion:nth-child(7n+5) {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)),color-stop(85%, #333333)), url(../img/foto1.png);
+    background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%,#333333 85%), url(../img/foto1.png);
+    background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%,#333333 85%), url(../img/foto1.png);
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%,#333333 85%), url(../img/foto1.png);
     background-position: 700px 0;
 }
@@ -203,7 +152,7 @@ h5 {
 
 .titulo-seccion {
     color: #FFFFFF;
-    font-family: 'Press Start 2P';
+    
     /*text-shadow: 2px 2px rgb(0,0,0);*/
 }
 
@@ -248,4 +197,22 @@ h5 {
 .navbar-nav > li {
     font-family: "Permanent Marker";
     font-size: 24px;
+}
+
+#timewanderer {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)),color-stop(75%, #333333)), url(../img/time-wanderer.png);
+    background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%,#333333 75%), url(../img/time-wanderer.png);
+    background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%,#333333 75%), url(../img/time-wanderer.png);
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%,#333333 75%), url(../img/time-wanderer.png);
+    background-position: bottom;
+    background-size: 100% 100%;
+}
+
+#testingproyect {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)),color-stop(75%, #333333)), url(../img/Captura6.png);
+    background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%,#333333 75%), url(../img/Captura6.png);
+    background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%,#333333 75%), url(../img/Captura6.png);
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%,#333333 75%), url(../img/Captura6.png);
+    background-position: left;
+    background-size: 100%;
 }
