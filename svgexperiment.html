@@ -3,7 +3,11 @@
 <html>
 
 <head>
-        <meta charset="utf-8"/>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <style>
         @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
         @import url('https://fonts.googleapis.com/css?family=Francois+One');
@@ -11,6 +15,8 @@
         /* #272727 #747474 #FF652F #FFE400 #14A76C */
         @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
         @import url('https://fonts.googleapis.com/css?family=Megrim');
+
+
 
         html,
         body {
@@ -21,11 +27,12 @@
         }
 
         body {
-            position:relative;
+            position: relative;
         }
+
         .header {
             /* font-family: 'IBM Plex Sans', sans-serif; */
-            
+
             font-family: 'Megrim', cursive;
             color: #ccc;
             position: relative;
@@ -36,6 +43,13 @@
             animation: MoveHeaderUp 1s;
             animation-delay: 2s;
             animation-fill-mode: both;
+
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            height: 30vw;
+            overflow: hidden;
             /* font-family: 'Permanent Marker', cursive; */
         }
 
@@ -67,7 +81,7 @@
             fill: none;
             stroke: #ccc;
             stroke-width: 0.30vw;
-            
+
             stroke-linecap: butt;
             animation: stroke-offset 3s ease-in;
             animation-fill-mode: both;
@@ -88,7 +102,7 @@
             0% {
                 /* stroke-dashoffset: 1000; */
                 /* stroke-dasharray: 1000; */
-                
+
                 /* fill: rgba(137, 43, 226, 0); */
                 fill: rgba(204, 204, 204, 0);
                 stroke: rgba(204, 204, 204, 0.150);
@@ -101,36 +115,52 @@
                 stroke-dasharray: 200vw;
                 stroke: rgba(204, 204, 204, 0.150);
             }
+
             90% {
                 stroke: rgba(255, 255, 255, 1.000);
             }
+
             100% {
                 stroke-dashoffset: 0vw;
                 /* stroke: rgba(204, 204, 204, 0.850); */
                 stroke: rgba(204, 204, 204, 1);
                 /* fill:rgba(137, 43, 226, 0.349); */
-                fill:rgba(204, 204, 204, 0.349);
+                fill: rgba(204, 204, 204, 0.349);
             }
         }
 
         .header {
-            display: flex;
-            flex-wrap: wrap;
-            align-content: center;
-            justify-content: center;
-            height: 30vw;
-            overflow: hidden;
+
             /* flex-direction: column; */
         }
 
         .container {
             display: flex;
             flex-direction: column;
-            width: 20em;
+            align-items: center;
+            /* width: 35em; */
+            /* position: absolute; */
+            /* top: 50%; */
+            /* width: 50%; */
+            /* height: 50%; */
+            position: absolute;
+            top: calc(50% + 10vw);
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            animation: Appear 0.75s ease-in-out;
+            animation-fill-mode: both;
+            animation-delay: 2s;
+
         }
-        .button:hover {
-            background: rgb(97, 97, 97)
+
+        .container>p {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 1.5em;
+            text-align: center;
         }
+
+
+
         .button {
             text-align: center;
             transition: background-color 0.25s ease-in-out;
@@ -138,22 +168,30 @@
             padding: 8px;
             border-radius: 8px;
             background: transparent;
-            border: 2px solid;
+            /* border: 2px solid; */
+            text-decoration: underline;
             margin: 4px;
-            border-color:  rgb(204,204,204);
+            /* border-color: rgb(204, 204, 204); */
             font-family: 'Josefin Sans', sans-serif;
             position: relative;
-            
+            cursor: pointer;
             font-size: 1.25em;
             line-height: 1.25em;
+            font-size: 2rem;
+            width: 15em;
         }
+
+        .button:hover {
+            background: rgba(97, 97, 97, 0.247)
+        }
+
         .fromLeft::after {
             line-height: 1.25em;
             position: absolute;
             top: 0;
             bottom: 0;
             left: 4px;
-            content: '←';
+            /* content: '←'; */
         }
 
         .fromRight::after {
@@ -162,23 +200,211 @@
             top: 0;
             bottom: 0;
             right: 4px;
-            content: "→"
+            /* content: "→" */
         }
 
         @keyframes MoveHeaderUp {
             0% {
                 top: calc(50% - 20vw);
             }
+
             100% {
                 top: 0px;
             }
         }
+
+        .fromLeft {
+
+            animation: AnimateTopButton 0.75s ease-in-out;
+            animation-fill-mode: both;
+            animation-delay: 2s;
+        }
+
+        .fromRight {
+
+            animation: AnimateBottomButton 0.75s ease-in-out;
+            animation-fill-mode: both;
+            animation-delay: 2s;
+        }
+
+        @keyframes Appear {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes AnimateTopButton {
+            0% {
+                transform: translateX(-64px);
+            }
+
+            100% {
+                transform: translateX(0px);
+            }
+        }
+
+        @keyframes AnimateBottomButton {
+            0% {
+                transform: translateX(64px);
+            }
+
+            100% {
+                transform: translateX(0px);
+            }
+        }
+
+        .arrowAnimator {
+            display: inline-block;
+            position: absolute;
+            /* top: 0; */
+            /* bottom: 0; */
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            padding-top: 4px;
+        }
+
+        .arrowAnimator>* {
+            height: 100%;
+        }
+
+        .arrowAnimator-left {
+            left: 0;
+
+        }
+
+        .arrowAnimator-right {
+            right: 0;
+        }
+
+        .fromRight:hover .arrowAnimator-left {
+            animation: AnimateArrowLeft 0.25s infinite ease-in-out alternate;
+        }
+
+        .fromLeft:hover .arrowAnimator-right {
+            animation: AnimateArrowRight 0.25s infinite ease-in-out alternate;
+        }
+
+        .cv {
+            display: inline;
+        }
+
+        .cv-short {
+            display: none;
+        }
+
+        @keyframes AnimateArrowLeft {
+            0% {
+                transform: translateX(0px);
+            }
+
+            100% {
+                transform: translateX(4px);
+            }
+        }
+
+        @keyframes AnimateArrowRight {
+            0% {
+                transform: translateX(0px);
+            }
+
+            100% {
+                transform: translateX(-4px);
+            }
+        }
+
+        @media (min-width: 1921px) {
+            .text {
+                font-size: 21.5em !important;
+                stroke-width: 0.0135em !important;
+            }
+        }
+
+        /* Large desktop */
+        @media (min-width: 1200px) and (max-width: 1920px) {
+            .text {
+                /* font-size: 13.5rem !important; */
+            }
+        }
+
+        /* Portrait tablet to landscape and desktop */
+        @media (min-width: 768px) and (max-width: 979px) {}
+
+        /* Landscape phone to portrait tablet */
+        @media only screen and (max-width: 600px) {
+            html {
+                overflow: hidden;
+            }
+
+            body {
+                margin: 4px;
+            }
+
+            .container {
+                width: calc(100% - 8px);
+            }
+
+            .button {
+                font-size: 3em;
+                width: 100%;
+                margin-left: 8px;
+                margin-right: 8px;
+
+            }
+
+            .CV {
+                content: '';
+            }
+
+            .arrowAnimator {
+                position: absolute;
+            }
+
+            .arrowAnimator-left {
+                margin-right: 8px;
+                left: 24px;
+            }
+
+            .arrowAnimator-right {
+                margin-left: 8px;
+                right: 24px;
+            }
+
+            .container>p {
+                width: auto;
+                font-size: 2em;
+            }
+
+            .cv-short {
+                display: inline;
+            }
+
+            .cv-long {
+                display: none;
+            }
+        }
+
+        /* Landscape phones and down */
+        /* @media (max-width: 480px) {
+            .button {
+                font-size: 3em !important;
+            }
+
+            .container>p {
+                font-size: 2.5em !important;
+            }
+        } */
     </style>
 
     <style>
         body {
             background-color: black;
         }
+
         html::before,
         html::after,
         body::before,
@@ -192,15 +418,22 @@
             height: .5vmin;
             border-radius: 50%;
             color: transparent;
-            animation: rotate-slowly 20s infinite linear;
+            animation: rotate-slowly 60s infinite linear;
+            transform-origin: 50% 50%;
         }
 
         @keyframes rotate-slowly {
             0% {
-                transform: skewY(-3deg) translate(-10px, -10px);
+                transform: rotate(10deg) skewY(-3deg) translate(-0px, -10px);
             }
+
+            50% {
+                transform: skewY(1deg) translate(-10px, 10px);
+            }
+
             100% {
-                transform: skewY(-3deg) translate(-10px, -10px);
+                transform: rotate(10deg) skewY(-3deg) translate(-0px, -10px);
+
             }
         }
 
@@ -346,8 +579,15 @@
         </svg> -->
     </div>
     <div class="container" style="color: white">
-        <div class="button fromLeft">Curriculum Vitae</div>
-        <div class="button fromRight">Portfolio</div>
+        <p><b>Sergio Sánchez López</b> (aka <b>Sergiced</b>), is a Madrid-based game and front-end developer.<br></p>
+        <div class="button fromLeft">
+            <div class="cv cv-short">CV</div>
+            <div class="cv cv-long">Curriculum Vitae</div>
+            <div class="arrowAnimator arrowAnimator-right"><i class="fas fa-angle-right"></i></div>
+        </div>
+        <div class="button fromRight">
+            <div class="arrowAnimator arrowAnimator-left"><i class="fas fa-angle-left"></i></div>Portfolio
+        </div>
     </div>
 </body>
 
