@@ -8,11 +8,11 @@
         crossorigin="anonymous">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!-- Chrome, Firefox OS and Opera -->
-<meta name="theme-color" content="#000000">
-<!-- Windows Phone -->
-<meta name="msapplication-navbutton-color" content="#000000">
-<!-- iOS Safari -->
-<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <meta name="theme-color" content="#000000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
         @import url('https://fonts.googleapis.com/css?family=Francois+One');
@@ -40,11 +40,11 @@
 
             font-family: 'Megrim', cursive;
             color: #ccc;
-            position: relative;
+            /* position: relative; */
             /* top: calc(50% - 20vw); */
-            left: 0;
-            bottom: 0;
-            right: 0;
+            /* left: 0; */
+            /* bottom: 0; */
+            /* right: 0; */
             animation: MoveHeaderUp 1s;
             animation-delay: 2s;
             animation-fill-mode: both;
@@ -54,7 +54,13 @@
             align-content: center;
             justify-content: center;
             height: 30vw;
+            width: 100%;
             overflow: hidden;
+
+            position: absolute;
+            top: calc(30% + 0vw);
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
             /* font-family: 'Permanent Marker', cursive; */
         }
 
@@ -141,6 +147,7 @@
         }
 
         .container {
+            box-shadow: inset 0px 300px 16px 13px #000000ed, 1px -4px 16px 13px #000000ed;
             color: rgba(204, 204, 204, 1);
             display: flex;
             flex-direction: column;
@@ -212,11 +219,14 @@
 
         @keyframes MoveHeaderUp {
             0% {
-                top: calc(50% - 20vw);
+                /* top: calc(50% - 20vmax); */
+                transform: translateY(-15%) translateX(-50%);
             }
 
             100% {
-                top: 0px;
+                /* top: 0px; */
+                /* top: -4vmax; */
+                transform: translateY(-50%) translateX(-50%);
             }
         }
 
@@ -342,6 +352,7 @@
         @media (min-width: 768px) and (max-width: 979px) {}
 
         /* Landscape phone to portrait tablet */
+        
         @media only screen and (max-width: 600px) {
             html {
                 overflow: hidden;
@@ -351,16 +362,24 @@
                 /* padding: 4px; */
             }
 
+            .text {
+                font-size: 24vw;
+            }
             .container {
                 width: calc(100% - 8px);
-                top: calc(50% - 2vw);
+                
+                /* top: calc(50% - 2vw); */
+                top: calc(55%);
             }
 
             .header {
                 width: calc(100% - 8px);
                 margin: 0;
                 margin-top: 75px;
+                height: 45vw;
+                top: calc(37% - 35vw);
             }
+
             .button {
                 font-size: 2.5em;
                 width: calc(100% - 8px);
@@ -401,16 +420,13 @@
             }
         }
 
-        /* Landscape phones and down */
-        /* @media (max-width: 480px) {
-            .button {
-                font-size: 3em !important;
+        @media only screen and (max-width: 600px) and (max-height: 800px) {
+            .container {
+                
+                /* top: calc(50% - 2vw); */
+                top: calc(65%);
             }
-
-            .container>p {
-                font-size: 2.5em !important;
-            }
-        } */
+        }
     </style>
 
     <style>
