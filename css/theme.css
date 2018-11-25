@@ -97,10 +97,10 @@
 .mi-foto {
     width: 250px;
     height: 250px;
-    background: url(../img/yo.jpg);
+    background: url(../img/profilepicture.png);
     background-size: 100%;
     border-radius: 100%;
-    background-position: center -18px;
+    background-position: center -4px;
     background-color: white;
 }
 
